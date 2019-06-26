@@ -1,0 +1,879 @@
+﻿@import "F:\Sourse\网页模版\fn\fn.styl"
+
+col = #21b8ff
+
+.wid
+	width 1234px
+	margin 0 auto
+
+.banner
+	height 1008px
+	width 100%
+	position relative
+	.bann
+		width 100%
+		height 100%
+		ul
+			width 100%
+			height 100%
+			li
+				width 100%
+				height 100%
+				position absolute
+				top 0
+				left 0
+				&.acti
+					.pict
+						animation fadeInUp 1s both
+				.pict
+					margin-top 250px
+					text-align center
+				a
+					dm 1
+					margin-top 65px
+					width 184px
+					heightL 54px
+					border-radius 3px
+					color #fff
+					font-size 18px
+					background #e57562
+					text-align center
+	.cirl
+		position absolute
+		bottom 113px
+		width 50%
+		left 25%
+		z-index 1
+		text-align center
+		ul
+			font-size 0
+			li
+				width 20px
+				height 20px
+				cursor pointer
+				border-radius 50%
+				margin 0 4px
+				float none
+				display inline-block
+				opacity .2
+				background #000
+				&.acti
+					background #36bfff
+					opacity 1
+					
+.top
+	padding 10px 16px
+	height 57px
+	position fixed
+	left 0
+	width 100%
+	top 0
+	z-index 2
+	&.active
+		background #fff
+		.logo
+			.i1
+				display none
+			.i2
+				display block
+		.menu
+			ul
+				li
+					&.down
+						&:before
+							border-color #b5bdc4
+					&:hover
+					&.acti
+						> a
+							color col
+						&:after
+							background col
+					> a
+						color #646f79
+			.shiting
+				span
+					color #333
+				a
+					color col
+					border-color col
+					hover #fff col
+	.logo
+		float left
+		.i2
+			display none
+			
+	.menu
+		float right
+		ul
+			float left
+			li
+				margin-left 36px
+				position relative
+				i
+					display inline-block
+					width 18px
+					height 2px
+				.sub
+					display none
+					width 160px
+					position absolute
+					.box
+						border-radius 5px
+						box-shadow 0 0 10px rgba(#000,.2)
+						background #fff
+						padding 15px 0
+						margin-top 15px
+					a
+						display block
+						line-height 3
+						padding-left 30px
+						color #646f79
+						position relative
+						&:hover
+							color col
+							font-weight bold
+							&:after
+								width 5px
+								height 10px
+								right 20px
+								top 12px
+								content ''
+								position absolute
+								transform rotate(45deg)
+								border-right 2px solid col
+								border-bottom 2px solid col
+				&.down
+					&:before
+						content ''
+						position absolute
+						z-index 1
+						top 10px
+						right 0
+						widthZ 8px
+						border-bottom 1px solid #fff
+						border-left 1px solid #fff
+						transform rotate(-45deg)
+				&:hover
+				&.acti
+					&:before
+							border-color col !important
+					.sub
+						display block
+					&:after
+						left 0
+						bottom 0
+						position absolute
+						width 100%
+						height 3px
+						content ''
+						background #fff
+				> a
+					line-height 36px
+					color #fff
+		.shiting
+			margin-left 36px
+			float left
+			span
+				color #fff
+				float left
+				heightL 36px
+			a
+				margin-left 15px
+				line-height 32px
+				font-size 16px
+				text-align center
+				float left
+				width 148px
+				height 36px
+				border-radius 3px
+				border 2px solid #fff
+				color #fff
+				hover #333 #fff
+				
+.title
+	font-size 40px
+	text-align center
+
+.six-lar
+	padding-top 100px
+	padding-bottom 124px
+	dt 1
+	ul
+		margin-top 120px
+		li
+			width 16.6%
+			text-align center
+			span
+				padding 0 30px
+				text-align left
+				margin-top 18px
+				display block
+				font-size 18px
+				color #262626
+				line-height 1.4
+
+.system
+	dt 1
+	background #f6f8f9
+	padding-top 154px
+	padding-bottom 46px
+	ul
+		dt 1
+		margin-top 86px
+		li
+			overflow hidden
+			width 389px
+			margin-left 32px
+			ml 0
+			height 489px
+			position relative
+			background #fff
+			&:hover
+				.text
+					transform translate(0, 0)
+					dl
+						opacity 1
+					&:after
+						content ''
+						position absolute
+						left 0
+						width 100%
+						height 6px
+						top 0
+						back('96717c40ec64ae1f_389x6.png')
+			.text
+				padding 0 34px
+				transition .3s
+				abs 1
+				background #fff
+				transform translate(0, 248px)
+				h2
+					font-weight bold
+					margin-top 32px
+					font-size 26px
+					padding-bottom 15px
+				p
+					font-size 18px
+					margin-top 5px
+					&.p1
+						color #02ceff
+					&.p2
+						color #27e4be
+					&.p3
+						color #a177ff
+				b
+					height 90px
+					margin-top 20px
+					padding-top 20px
+					font-size 16px
+					display block
+					color #646f79
+					font-weight normal
+					line-height 1.4
+					border-top 1px solid #ededed
+				dl
+					opacity 0
+					transition .3s
+					dt 1
+					padding-top 15px
+					border-top 1px solid #ededed
+					dd
+						float left
+						width 50%
+						position relative
+						font-size 16px
+						color #646f79
+						margin-top 14px
+						cursor pointer
+						&.acti
+							color col
+							font-weight bold
+							&:after
+								width 5px
+								height 10px
+								right 0
+								bottom 5px
+								content ''
+								position absolute
+								transform rotate(45deg)
+								border-right 2px solid col
+								border-bottom 2px solid col
+				a
+					margin-top 98px
+					border-radius 5px
+					text-align center
+					line-height 32px
+					color col
+					float right
+					width 148px
+					height 36px
+					border 2px solid col
+					display block
+					font-size 16px
+					hover #fff col
+					
+	.btn
+		text-align center
+		margin-top 70px
+		a
+			display inline-block
+			width 182px
+			height 50px
+			line-height 46px
+			text-align center
+			color #21b8ff
+			border 2px solid #21b8ff
+			border-radius 3px
+			margin 0 15px
+			font-size 18px
+			&.acti
+				color #fff
+				background #21b8ff
+			hover #fff #21b8ff
+			
+.eight
+	margin-top 10px
+	height 677px
+	back('b06aff27437c625a_1903x677.jpg')
+	padding-top 109px
+	.wid
+		padding 0 34px
+	.title
+		color #fff
+	ul
+		dt 1
+		margin-top 52px
+		li
+			cursor pointer
+			margin-top 27px
+			width 252px
+			height 58px
+			border 2px solid #827f7f
+			border-radius 4px 
+			background rgba(#fff,.2)
+			color #fff
+			text-align center
+			line-height 54px
+			margin-left 52px
+			font-size 22px
+			ml 0 4
+			transition .3s
+			&:hover
+				border-color #2cb148
+				background-color rgba(#2cb148,.2)
+	.box
+		dt 1
+		margin-top 55px
+		border-radius 10px
+		min-height 140px
+		background #2cb148
+		position relative
+		img
+			position absolute
+			bottom 0
+			left 30px
+		.fr
+			width 882px
+			margin-right 40px
+		p
+			vertical-align middle
+			height 140px
+			display table-cell
+			color #fff
+			line-height 1.6
+			font-size 16px
+
+.fudao
+	height 989px
+	back('4a1c3310cdfce215_1903x989.jpg')
+	padding-top 112px
+	.title
+		color #fff
+	strong
+		display block
+		text-align center
+		font-size 24px
+		margin-top 28px
+		color #fff
+		font-weight normal
+	.scroll-wrap
+		position relative
+		height 607px
+		margin-top 74px
+		.pos
+			center 2
+			cursor pointer
+			&.next
+				right -35px
+			&.prev
+				left -35px
+	.box
+		height 607px
+	ul
+		li
+			width 389px
+			height 607px
+			background #fff
+			margin-left 32px
+			ml 0
+			.line
+				height 6px
+				back('96717c40ec64ae1f_389x6.png')
+			.per-name
+				padding 0 30px
+				margin-top 35px
+				dt 1
+				.pict
+					float left
+					widthZ 129px
+					border-radius 50%
+					overflow hidden
+					img
+						width 100%
+				.name
+					float right
+					h3
+						font-weight bold
+						font-size 22px
+					p
+						margin-top 15px
+						padding 20px 0 0 20px
+						line-height 1.55
+						width 176px
+						height 88px
+						back('f6035c37dba67b41_176x88.png')
+						color #fff
+						font-size 12px
+			.text
+				margin-top 10px
+				padding 15px 30px
+				dt 1
+				p
+					font-size 14px
+					color #646f79
+					margin-top 10px
+				b
+					font-weight normal
+					font-size 16px
+					color #222b37
+					display block
+					margin-top 10px
+			.time
+				dt 1
+				padding 15px 0
+				background #f2f2f2
+				dl
+					padding 0 30px
+					float left
+					width 50%
+					img
+						margin-top 5px
+						float left
+						margin-right 10px
+					b
+						font-size 20px
+						color #ff8a00
+						display block
+						float left
+						span
+							margin-top 5px
+							font-size 14px
+							display block
+							font-weight normal
+							color #3e3a39
+			.desc
+				padding 0 30px
+				margin-top 25px
+				p
+					line-height 1.9
+					font-size 13px
+					color #646f79
+			.btn
+				margin-top 30px
+				a
+					font-size 18px
+					line-height 46px
+					width 170px
+					color col
+					height 50px
+					border 2px solid col
+					text-align center
+					border-radius 5px
+					dm 1
+					hover #fff col
+			
+		
+.jiaoxue
+	dt 1
+	padding-top 131px
+	padding-bottom 127px
+	h1
+		text-align center
+	strong
+		font-size 24px
+		line-height 1.4
+		font-weight normal
+		padding 0 170px
+		text-align center
+		display block
+		margin-top 32px
+		b
+			color col
+	ul
+		margin-top 87px
+		li
+			width 269px
+			margin-left 32px
+			transition .3s
+			padding-bottom 24px
+			&:hover
+				transform translate(0,-5px)
+				box-shadow 0 4px 30px rgba(#000,.2)
+				.pict
+					
+					
+					span
+						opacity 1
+				a
+					color #fff
+					background col
+					border-color col
+			.pict
+				box-shadow 0 0 10px rgba(#000,.3)
+				height 254px
+				border-radius 6px
+				overflow hidden
+				position relative
+				img
+					width 100%
+				span
+					transition .3s
+					opacity 0
+					background col
+					abs 1
+					padding 65px 30px 0
+					color #fff
+					line-height 1.6
+			h4
+				margin-top 30px
+				text-align center
+				font-size 18px
+				color #3e3a39
+				b
+					font-size 22px
+			p
+				text-align center
+				margin-top 10px
+				height 59px
+				font-size 16px
+				color #727171
+			a
+				transition .3s
+				border-radius 4px
+				color #64b4ee
+				dm 0
+				margin-top 20px
+				text-align center
+				line-height 46px
+				font-size 18px
+				width 221px
+				height 50px
+				border 2px solid col
+
+.xiao
+	background #e7f6ff
+	padding-top 117px
+	padding-bottom 94px
+	dt 1
+	.enlish
+		float left
+		width 45px
+		margin-top 68px
+		span
+			float left
+			margin-top 0px
+			margin-bottom 30px
+	ul
+		float left
+		widthC 45px
+		margin-top 68px
+		li
+			margin-left 19px
+			width 140px
+			heightL 50px
+			border 1px solid #c2e1f7
+			text-align center
+			margin-bottom 23px
+			background #fff
+			img
+				margin-top -2px	
+	.btn
+		float 0
+		text-align center
+		margin-top 47px
+		a
+			display inline-block
+			width 174px
+			height 50px
+			line-height 46px
+			text-align center
+			color #21b8ff
+			border 2px solid #21b8ff
+			border-radius 5px
+			margin 0 15px
+			font-size 18px
+			&.acti
+				color #fff
+				background #21b8ff
+			hover #fff #21b8ff
+			
+
+.copy
+	background #222b37
+	p
+		text-align center
+		font-size 12px
+		color #b3b3b3
+		padding 25px 0
+
+.submit-form
+	background #343c46
+	position relative
+	height 65px
+	.wid
+		width 1169px
+	.pict
+		height 65px
+		position relative
+		float left
+		width 233px
+		img
+			width 100%
+			position absolute
+			bottom 0
+			left 0
+	.text
+		margin-top 12px
+		color #fff
+		float left
+		margin-left 20px
+		b
+			display block
+			color #fff
+			font-size 17px
+		p
+			font-size 17px
+			margin-top 10px
+	.from
+		float right
+		margin-right 60px
+		padding-top 7px
+		.wrap-input
+			background #fff
+			width 349px
+			height 50px
+			border 2px solid #e0e6e8
+			float left
+			border-radius 5px
+			select
+				height 100%
+				border none
+				padding-left 15px
+				font-size 16px
+				float left
+				width 81px
+			input
+				padding 0 20px
+				border none
+				border-left 1px solid #e6e6e6
+				font-size 18px
+				margin-top 8px
+				height 30px
+				widthC 96px
+				margin-left 15px
+		button
+			width 138px
+			margin-left 32px
+			height 50px
+			background #21b8ff
+			color #fff
+			font-size 18px
+			border-radius 6px
+			
+.footer
+	dt 1
+	background #151b26
+	.wid
+		width 1169px
+	.hot-line
+		padding-top 74px
+		dt 1
+		padding-bottom 32px
+		.logo
+			float left
+			width 324px
+			text-align center
+			img
+				display block
+			span
+				text-align left
+				padding-left 40px
+				display block
+				font-size 16px
+				color #b3b3b3
+				margin-top 18px
+		.about
+			width 260px
+			float left
+			a
+				line-height 2
+				float left
+				color #b3b3b3
+				font-size 13px
+				width 50%
+				transition .2s
+				&:hover
+					color #fff
+		.host
+			float left
+			text-align center
+			p
+				color #b3b3b3
+				font-size 18px
+			b
+				line-height 2
+				font-weight normal
+				display block
+				font-size 24px
+				color #fff
+			span
+				display block
+				font-size 14px
+				color #b3b3b3
+		.code
+			float right
+			ul
+				li
+					margin-left 30px
+					text-align center
+					span
+						display block
+						text-align center
+						color #fff
+						margin-top 10px
+						font-size 12px
+		
+	.area
+		border-top 1px solid #3e434d
+		padding-top 33px
+		padding-bottom 58px
+		dt 1
+		ul
+			
+			li
+				color #fff
+				width 25%
+				padding-left 40px
+				&:first-child
+					padding-left 0
+				b
+					display block
+					font-size 13px
+					line-height 1.8
+				p
+					line-height 1.8
+					color #b3b3b3
+					font-size 13px
+
+
+.ping
+	padding-top 135px
+	dt 1
+	padding-bottom 140px
+	.type
+		margin-top 45px
+		span
+			float left
+			width 168px
+			height 57px
+			border 2px solid #2cb148
+			border-radius 5px
+			text-align center
+			font-size 26px
+			line-height 53px
+			margin-left 32px
+			cursor pointer
+			ml 0
+			position relative
+			&.acti
+				background #2cb148
+				color #fff
+				&:after
+					z-index 1
+					content ""
+					center 1
+					top -30px
+					width 0px
+					height 0px
+					border-bottom 20px solid #2cb148
+					border-left 14px solid transparent
+					border-top 14px solid transparent
+					border-right 14px solid transparent
+					
+
+	.content
+		margin-top 15px
+	.tabs
+		margin-top 65px
+		text-align center
+		span
+			display inline-block
+			position relative
+			margin 0 10px
+			font-size 26px
+			text-align center
+			width 123px
+			cursor pointer
+			line-height 2
+			&:after
+				content ''
+				position absolute
+				width 123px
+				height 5px
+				left 0
+				bottom 0
+				back('1da4154d073d3b26_123x5.png')
+			&.acti
+				font-weight bold
+				color #2cb148
+				&:after
+					bottom -11px
+					height 16px
+					back('bbdf3856a34754d9_123x16.png')
+
+.fixed
+	position fixed
+	right 0
+	width 66px
+	top 30%
+	background rgba(#fff,.9)
+	box-shadow 0 0 10px rgba(#000,.3)
+	border-radius 10px 0 0 10px
+	ul
+		li
+			width 66px
+			text-align center
+			border-top 1px solid #f1f1f1
+			border-topN none
+			padding 10px 0
+			a
+				display block
+			span
+				font-size 12px
+				display block
+				color #666
+				margin-top 10px
+			.down
+				cursor pointer
+				height 65px
+				back1('b178f91b91a5207b_22x12.png')

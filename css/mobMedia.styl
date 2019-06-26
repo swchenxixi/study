@@ -1,0 +1,165 @@
+@media screen and (max-width:750px)
+	.wid
+		width 100%
+		padding-left 3%
+		padding-right 3%
+
+	// 浮动
+	.m-fl-fl
+		float left !important
+		
+	.m-fl-fr
+		float left !important
+		
+	.m-fl-no
+		float none !important
+	
+	.m-bdl-n
+		border-left none !important
+		
+	.m-bdr-n
+		border-right none
+
+	.m-dis-no
+		display none !important
+	
+	.m-dis-bl
+		display block !important
+	
+	.m-po-re
+		position relative !important
+	
+	.m-po-ab
+		position absolute !important
+	
+	.m-po-fi
+		position fixed !important
+	
+	.m-hei-at
+		height auto !important
+	
+	.m-wid-at
+		width auto !important
+	
+	.m-after-no
+		&:after
+			display none
+		
+		&:before
+			display none
+	
+
+	
+
+	
+	.m-ta-l
+		text-align left !important
+	
+	.m-ta-c
+		text-align center !important
+	
+	.m-ta-r
+		text-align right !important
+	
+	//相对定位
+	.m-po-re
+		position relative !important
+		
+	.m-back-no
+		background none !important
+		
+	.m-bg-size
+		background-size cover !important
+	
+	.m-lr-0
+		left 0 !important
+		right 0 !important
+	.m-tb-0
+		top 0 !important
+		bottom 0 !important
+		
+	.m-item-li
+		margin-left 0 !important
+		> li
+			width 100% !important
+			margin-left 0 !important
+	//删格化
+	for i in 1..12
+		.m-xs-{i}
+			width i*(100/12)% !important
+			margin-left 0 !important
+			margin-right 0 !important
+			float left
+
+	// 像素(px)
+	pixel(obj,w)
+		for i in 0..150
+			.m-{obj}-{i*2}
+				{w} i*2px !important
+	
+	//	margin
+	pixel(mt,margin-top)
+	pixel(mr,margin-right)
+	pixel(mb,margin-bottom)
+	pixel(ml,margin-left)
+	
+	//	padding
+	pixel(pt,padding-top)
+	pixel(pr,padding-right)
+	pixel(pb,padding-bottom)
+	pixel(pl,padding-left)
+	pixel(lf,left)
+	pixel(ri,right)
+	pixel(tt,top)
+	pixel(bo,bottom)
+	pixel(fz,font-size)
+	
+	// width
+	pixel(widp,width)
+	
+	// height
+	pixel(heip,height)
+	
+	
+	// 百分比(%)
+	percent(obj,w)
+		for i in 0..50
+			.m-{obj}-{i*2}
+				{w} i*2% !important
+	
+	percent(wid,width)
+	percent(plb,padding-left)
+	percent(le,left)
+	
+	
+	// 像素(%)
+	complex(obj,w,ise)
+		for i in 0..25
+			.m-{obj}-{i*2}
+				if ise
+					{w}  i*2px 0 !important
+				else
+					{w}  0 i*2px !important
+	
+	// 复合写法
+	complex(mtb,margin,1)
+	complex(ptb,padding,1)
+	complex(mlr,margin,0)
+	complex(plr,padding,0)
+		
+
+	
+	for i in 1..30
+		.del-{i}
+			animation-delay i*.1s
+			
+	.m-box-at
+		margin-left auto !important
+		margin-right auto !important
+		float none !important
+		
+	// 缩放
+
+	for i in 1..10
+		.m-sc-{i}
+			transform scale(i/10)
